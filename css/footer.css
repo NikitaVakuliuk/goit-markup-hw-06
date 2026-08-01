@@ -1,16 +1,17 @@
+/* ==================== FOOTER ==================== */
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
 }
 
-.footer .container {
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 72px;
 }
 
-/* Блок з логотипом та текстом */
+/* --- LOGO & TEXT --- */
 .footer-text-wrap {
   display: flex;
   flex-direction: column;
@@ -34,16 +35,15 @@
 }
 
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
-  text-align: left;
+  max-width: 268px;
+  text-align: left; /* Виправлено за зауваженням ментора */
 }
 
-/* Блок соцмереж */
+/* --- SOCIAL MEDIA --- */
 .footer-social-wrap {
   display: flex;
   flex-direction: column;
@@ -57,7 +57,6 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .footer-social-list {
@@ -90,12 +89,12 @@
   fill: #f4f4fd;
 }
 
-/* Блок підписки */
+/* --- SUBSCRIBE FORM --- */
 .footer-subscribe-wrap {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .footer-subscribe-form {
@@ -104,6 +103,11 @@
   align-items: center;
   gap: 16px;
   width: 100%;
+}
+
+.footer-label {
+  width: 100%;
+  max-width: 288px;
 }
 
 .footer-input {
@@ -118,7 +122,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  opacity: 0.6;
+  outline: transparent;
 }
 
 .footer-input::placeholder {
@@ -154,19 +158,15 @@
   fill: #ffffff;
 }
 
-/* ==== FOOTER: TABLET (від 768px до 1157px) ==== */
+/* ==================== TABLET (>= 768px) ==================== */
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 96px 0;
-  }
-
-  .footer .container {
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     column-gap: 24px;
     row-gap: 72px;
-    width: 584px;
+    padding-left: 108px;
   }
 
   .footer-text-wrap {
@@ -175,10 +175,6 @@
 
   .footer-social-wrap {
     align-items: flex-start;
-  }
-
-  .footer-title {
-    text-align: left;
   }
 
   .footer-subscribe-wrap {
@@ -190,30 +186,27 @@
     gap: 24px;
   }
 
-  .footer-input {
+  .footer-label {
     width: 264px;
   }
 }
 
-/* ==== FOOTER: DESKTOP (від 1158px) ==== */
+/* ==================== DESKTOP (>= 1158px) ==================== */
 @media screen and (min-width: 1158px) {
   .footer {
     padding: 100px 0;
   }
 
-  .footer .container {
-    width: 1158px;
-    flex-wrap: nowrap;
-    align-items: baseline;
+  .footer-container {
+    padding-left: 15px;
     column-gap: 0;
-    row-gap: 0;
   }
 
   .footer-text-wrap {
     margin-right: 120px;
   }
 
-  .footer-subscribe-wrap {
-    margin-left: auto;
+  .footer-social-wrap {
+    margin-right: 80px;
   }
 }
