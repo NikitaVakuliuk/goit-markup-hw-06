@@ -6,8 +6,8 @@
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
-      url("../images/background-image-mob.jpg") 1x,
-      url("../images/background-image-mob@2x.jpg") 2x
+      url("../images/hero-bg-mob.jpg") 1x,
+      url("../images/hero-bg-mob@2x.jpg") 2x
     );
   background-repeat: no-repeat;
   background-position: center;
@@ -55,8 +55,8 @@
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
-        url("../images/background-image-tab.jpg") 1x,
-        url("../images/background-image-tab@2x.jpg") 2x
+        url("../images/hero-bg-tab.jpg") 1x,
+        url("../images/hero-bg-tab@2x.jpg") 2x
       );
   }
 
@@ -76,8 +76,8 @@
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
-        url("../images/background-image.jpg") 1x,
-        url("../images/background-image@2x.jpg") 2x
+        url("../images/hero-bg.jpg") 1x,
+        url("../images/hero-bg@2x.jpg") 2x
       );
   }
 
