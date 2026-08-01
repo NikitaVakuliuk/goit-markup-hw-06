@@ -1,17 +1,25 @@
+/* ==== HERO SECTION ==== */
+
 .hero {
-  padding-top: 72px;
-  padding-bottom: 72px;
-  margin: 0 auto;
   background-color: #2e2f42;
+  padding: 72px 0;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    image-set(
-      url("../images/hero-bg-mob.jpg") 1x,
-      url("../images/hero-bg-mob@2x.jpg") 2x
-    );
+    url("../images/hero-bg-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Retina Mobile (2x) */
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg-mob@2x.jpg");
+  }
 }
 
 .hero-title {
@@ -26,7 +34,7 @@
 }
 
 .hero-btn {
-  font-family: inherit;
+  background-weight: 500;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -35,11 +43,11 @@
   background-color: #4d5ae5;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -48,16 +56,23 @@
   background-color: #404bbf;
 }
 
+/* ==== TABLET (від 768px) ==== */
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding: 112px 0;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      image-set(
-        url("../images/hero-bg-tab.jpg") 1x,
-        url("../images/hero-bg-tab@2x.jpg") 2x
-      );
+      url("../images/hero-bg-tab.jpg");
+  }
+
+  /* Retina Tablet (2x) */
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-bg-tab@2x.jpg");
+    }
   }
 
   .hero-title {
@@ -68,17 +83,23 @@
   }
 }
 
+/* ==== DESKTOP (від 1158px) ==== */
 @media screen and (min-width: 1158px) {
   .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
+    padding: 188px 0;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      image-set(
-        url("../images/hero-bg.jpg") 1x,
-        url("../images/hero-bg@2x.jpg") 2x
-      );
+      url("../images/hero-bg.jpg");
+  }
+
+  /* Retina Desktop (2x) */
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-bg@2x.jpg");
+    }
   }
 
   .hero-title {
