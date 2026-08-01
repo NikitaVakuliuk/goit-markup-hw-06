@@ -40,7 +40,7 @@
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 268px;
-  text-align: left; /* Виправлено за зауваженням ментора */
+  text-align: left;
 }
 
 /* --- SOCIAL MEDIA --- */
@@ -167,6 +167,7 @@
     column-gap: 24px;
     row-gap: 72px;
     padding-left: 108px;
+    padding-right: 108px; /* Симетричні падінги за вимогами ментора */
   }
 
   .footer-text-wrap {
@@ -198,15 +199,20 @@
   }
 
   .footer-container {
-    padding-left: 15px;
+    padding-left: 15px; /* Скинуто додатковий лівий відступ */
+    padding-right: 15px;
     column-gap: 0;
   }
 
   .footer-text-wrap {
-    margin-right: 120px;
+    margin-right: 120px; /* 120px до соцмереж */
   }
 
   .footer-social-wrap {
-    margin-right: 80px;
+    margin-right: 83px; /* Точно 83px за вимогою ментора */
+  }
+
+  .footer-subscribe-wrap {
+    margin-left: auto; /* Закріплює підписку по правому краю */
   }
 }
